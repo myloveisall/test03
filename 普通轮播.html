@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box {
+				width: 730px;
+				height: 454px;
+				margin: 10px auto;
+				position: relative;
+			}
+			/*.box1{*/
+			/*width: 730px;*/
+			/*height: 454px;*/
+			/*}*/
+			
+			.outer {
+				width: 730px;
+				height: 454px;
+				position: relative;
+			}
+			
+			.outer img {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.inner {
+				position: absolute;
+				top: 400px;
+				left: 150px;
+			}
+			
+			.inner li {
+				float: left;
+				margin-left: 15px;
+				list-style: none;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 30px;
+				background: blue;
+				cursor: pointer;
+			}
+			
+			.p1 {
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				background: #000000;
+				color: #ffffff;
+				font-size: 50px;
+				position: absolute;
+				top: 177px;
+				left: 0;
+				display: none;
+				cursor: pointer;
+			}
+			
+			.p2 {
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				text-align: center;
+				background: #000000;
+				color: #ffffff;
+				font-size: 50px;
+				position: absolute;
+				top: 177px;
+				right: 0;
+				display: none;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="box1">
+				<div class="outer">
+					<img src="img/0ca46c04a73d9d0894c328c05b6b24b.jpg" alt="" />
+					<img src="img/2be63efc0f0c6015125f86f50ee8d07.jpg" alt="" />
+					<img src="img/a83354e04c0381daac0ca3894f6d8c6.jpg" alt="" />
+					<img src="img/abb394ae3860797ec27815934adbc54.jpg" alt="" />
+					<img src="img/ee95f3084c35a06ab703e2f2a13af68.jpg" alt="" />
+				</div>
+				<div class="div">
+					<p class="p1"><</p>
+					<p class="p2">></p>
+				</div>
+			</div>
+
+			<div class="inner">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$('.outer').children('img').eq(0).show().siblings().hide();//显示第一张图片
+			$('.inner').find('li').eq(0).css('background','#FF5500');//选中
+			var ind = 0;
+			//自动播放
+			function bof(){
+				time = setInterval(function(){
+					ind++;
+					if(ind == $('img').length){
+						ind = 0
+					}
+					$('.outer').children('img').eq(ind).show().siblings().hide();
+					$('.inner').find('li').eq(ind).css('background','#FF5500').siblings().css('background','');//选中
+				},1500)
+			}
+			bof();
+			//光标经过时显示左右角
+			$('.box').mouseover(function(){
+				$('.div').find('.p1,.p2').show();
+				clearInterval(time)
+			})
+			$('.box').mouseout(function(){
+				$('.div').find('.p1,.p2').hide()
+				bof()
+			})
+			////右点击
+			$('.p2').click(function(){
+				ind++;
+				if(ind == $('img').length){
+					ind = 0
+				}
+				$('.outer').children('img').eq(ind).show().siblings().hide();
+				$('.inner').find('li').eq(ind).css('background','#FF5500').siblings().css('background','');//选中
+			})
+			//左点计
+			$('.p1').click(function(){
+				ind--;
+				if(ind < 0){
+					ind = $('img').length-1
+				}
+				$('.outer').children('img').eq(ind).show().siblings().hide();
+				$('.inner').find('li').eq(ind).css('background','#FF5500').siblings().css('background','');//选中
+			})
+			//点击li跳转相应的模块
+			$('li').click(function(){
+				var inds = $(this).index();
+				ind = inds;//
+				$('.outer').children('img').eq(ind).show().siblings().hide();
+				$('.inner').find('li').eq(ind).css('background','#FF5500').siblings().css('background','');//选中
+			})
+		})
+	</script>
+</html>

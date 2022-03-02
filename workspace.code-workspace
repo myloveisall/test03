@@ -1,0 +1,55 @@
+{
+	"folders": [
+		{
+			"path": "D:\\vsCode\\vue-jsj"
+		},
+		{
+			"path": "D:\\vsCode\\初识vue"
+		},
+		{
+			"path": "D:\\vsCode\\angular"
+		},
+		{
+			"path": "D:\\vsCode\\angularJs"
+		},
+		{
+			"path": "D:\\vsCode\\bootstrap"
+		},
+		{
+			"path": "D:\\vsCode\\bootstrap作业"
+		},
+		{
+			"path": "D:\\vsCode\\node"
+		},
+		{
+			"path": "D:\\vsCode\\node_two"
+		},
+		{
+			"path": "D:\\vsCode\\node_case"
+		},
+		{
+			"path": "D:\\vsCode\\node_mon"
+		},
+		{
+			"path": "D:\\vsCode\\h5-弧形"
+		},
+		{
+			"path": "D:\\vsCode\\jq-mobile"
+		},
+		{
+			"path": "D:\\旧机文件\\以往作业\\Ajax"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Program Files\\Git\\.git"
+		},
+		{
+			"path": "..\\..\\..\\Downloads\\test01-main"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jq-mobile"
+	}
+}

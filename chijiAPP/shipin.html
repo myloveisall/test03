@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/shipin.css" />
+		<script type="text/javascript" src="js/rem.js" ></script>
+	</head>
+	<body>
+		<div class="kuan">
+			<div class="a">
+				<div class="a-1">
+					<img src="img/logo_200.png" />
+				</div>
+				<div class="a-2">
+					<p class="p-1">和平精英</p>
+					<p class="p-2">腾讯自研军事竞赛体验手游</p>
+				</div>
+				<div class="a-3">
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="b">
+			<div class="b-1">
+				<a href="index.html">首页</a>
+				<a href="gonglue.html">攻略</a>
+				<a href="shipin.html">视频</a>
+				<a href="">资料库</a>
+			</div>
+			<div href="" class="b-2" onclick="dianwo()">登录</div>
+			<div class="zhezhao" id='zhezhao'>
+				<div class="tankuang">
+					<div id="header">
+						<span>登录</span>
+						<div id="header-right" onclick="hidder()"></div>
+					</div>
+					<img class="tu-1" src="img/dia-login-qq.png" />
+					<img class="tu-2" src="img/dia-login-wx.png" />
+				</div>
+			</div>
+			<script type="text/javascript">
+				document.getElementById('zhezhao').style.display = "none";
+
+				function dianwo() {
+					document.getElementById('zhezhao').style.display = "";
+				}
+
+				function hidder() {
+					document.getElementById('zhezhao').style.display = "none";
+				}
+			</script>
+		</div>
+		<!--轮播-->
+		<div class="c">
+			<div id="lunbo">
+				<ul>
+					<li>
+						<img src="img/03c85cf6a8d6ed1863573b9a59a6e658.jpeg" title="***">
+						<div class="c-1">
+							<a href="">腾讯游戏知几企鹅电竞直播起航</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/2cac6cbb9295be36ccd410cad5e50446.jpeg" title="***">
+						<div class="c-1">
+							<a href="">高校赛全国总决赛来袭</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/68bc7cf16495dd39e75747186c3ca96f.jpeg" title="***">
+						<div class="c-1">
+							<a href="">暮色古堡，优雅神秘</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/cad0118cd597f8f129bf0c1064e9493c.jpeg" title="***">
+						<div class="c-1">
+							<a href="">和平精英12月年度直播盛典月</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				//因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+				var li = document.getElementById('lunbo').getElementsByTagName("li");
+				var num = 0;
+				var len = li.length;
+
+				setInterval(function() {
+					li[num].style.display = "none";
+					num = ++num == len ? 0 : num;
+					li[num].style.display = "inline-block";
+				}, 3000); //切换时间
+			</script>
+		</div>
+		<div class="d">
+			<div class="zuo-1">
+				<h2>
+					<i></i>
+					TOP视频排行榜
+					<div class="d-1">
+						<span>日</span>
+						<span>周</span>
+						<span>月</span>
+					</div>
+				</h2>
+			</div>
+			<div id="a1" >
+				<ul>
+					<li>
+						<a href="" class="tuu">
+							<img src="img/下载.png"/>
+							<div class="you">
+								<div class="you-1">
+									<p>1.《和平精英》携手奇幻贺岁大片《赤狐书生》打造影游跨界合作新标杆</p>
+									<span>12/01</span>
+								</div>
+								<div class="you-2">
+									<p>和平精英运营团队</p>
+									<span>8.6万</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" class="ty">
+							<div class="yk">
+								<div class="yk-1">
+									<p>2.四排夺分不是梦</p>
+									<span>04/11</span>
+								</div>
+								<div class="yk-2">
+									<p>空投哥</p>
+									<span>1218</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" class="ty">
+							<div class="yk">
+								<div class="yk-1">
+									<p>3.四巧，学会上分不是梦</p>
+									<span>04/12</span>
+								</div>
+								<div class="yk-2">
+									<p>空投哥</p>
+									<span>900</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" class="ty">
+							<div class="yk">
+								<div class="yk-1">
+									<p>4.四排夺冠小技巧，学会是梦</p>
+									<span>04/13</span>
+								</div>
+								<div class="yk-2">
+									<p>空投哥</p>
+									<span>800</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" class="ty">
+							<div class="yk">
+								<div class="yk-1">
+									<p>5.冠小技巧，学会上分不是梦</p>
+									<span>04/14</span>
+								</div>
+								<div class="yk-2">
+									<p>空投哥</p>
+									<span>700</span>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" class="ty">
+							<div class="yk">
+								<div class="yk-1">
+									<p>6.四排夺冠分不是梦</p>
+									<span>04/15</span>
+								</div>
+								<div class="yk-2">
+									<p>空投哥</p>
+									<span>600</span>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="e">
+			<h2>
+				<i></i>
+				和平人气主播
+			</h2>
+			<ul class="e-1">
+				<li>
+					<a href="">
+						<img  src="img/rrou.jpg"/>
+						<p style="color: #EFA611;">柔柔</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/nanyan.jpg" />
+						<p>难言</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/wanyu.jpg" />
+						<p>晚玉</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/yididi.jpg" />
+						<p>艺帝帝</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="e-2">
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+					<span class="span3">0</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+					<span class="span3">245</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+					<span class="span3">1558</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+					<span class="span3">558</span>
+					<span class="span4">03/04</span>
+				</li>
+			</ul>
+		</div>
+		<div class="zhu">
+			<a href="">更多人气主播</a>
+		</div>
+		<div class="f">
+			<h2>
+				<i></i>
+				娱乐视频
+			</h2>
+			<div class="f-1">
+				<p>最新</p>
+				<p>娱乐精英</p>
+				<p>情感电台</p>
+				<p>真人搞笑</p>
+			</div>
+			<div class="f-3">
+				<img src="img/0sd.jpg" />
+				<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+				<span class="span1">0</span>
+				<span class="span2">03/04</span>
+			</div>
+			<ul class="f-2">
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+					<span class="span3">0</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+					<span class="span3">245</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+					<span class="span3">1558</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+					<span class="span3">558</span>
+					<span class="span4">03/04</span>
+				</li>
+			</ul>
+		</div>
+		<div class="shipin">
+			<a href="">查看更多视频</a>
+		</div>
+		<div class="g">
+			<h2>
+				<i></i>
+				进阶教学
+			</h2>
+			<div class="g-1">
+				<p>最新</p>
+				<p>身法教学</p>
+				<p>游戏设置</p>
+				<p>刚强教学</p>
+			</div>
+			<ul class="g-2">
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+					<span class="span3">0</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+					<span class="span3">245</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+					<span class="span3">1558</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+					<span class="span3">558</span>
+					<span class="span4">03/04</span>
+				</li>
+			</ul>
+		</div>
+		<div class="shipin">
+			<a href="">查看更多视频</a>
+		</div>
+		<!---->
+		<div class="g">
+			<h2>
+				<i></i>
+				精品栏目
+			</h2>
+			<div class="g-1">
+				<p>最新</p>
+				<p>燃烧吧大局观</p>
+				<p>盒子有话说</p>
+				<p>快来扶我</p>
+			</div>
+			<ul class="g-2">
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+					<span class="span3">0</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+					<span class="span3">245</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+					<span class="span3">1558</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+					<span class="span3">558</span>
+					<span class="span4">03/04</span>
+				</li>
+			</ul>
+		</div>
+		<div class="shipin">
+			<a href="">查看更多精品</a>
+		</div>
+		<!---->
+		<div class="g">
+			<h2>
+				<i></i>
+				赛事
+			</h2>
+			<div class="g-1">
+				<p>PEC</p>
+				<p>PEL</p>
+				<p>TGA</p>
+				<p>PEGI</p>
+			</div>
+			<ul class="g-2">
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+					<span class="span3">0</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+					<span class="span3">245</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+					<span class="span3">1558</span>
+					<span class="span4">03/04</span>
+				</li>
+				<li>
+					<img src="img/0sdaf.jpg"/>
+					<p>燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+					<span class="span3">558</span>
+					<span class="span4">03/04</span>
+				</li>
+			</ul>
+		</div>
+		<div class="shipin">
+			<a href="">查看更多视频</a>
+		</div>
+		<div class="l">
+			<ul>
+				<li>
+					<a href="">
+						<img src="img/code2_m_new.png"/>
+						<p>官方公众号</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/code4_m_new.png"/>
+						<p>官方微博</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/code2_m_new.png"/>
+						<p>微信用户社区</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/code1_m_new.png"/>
+						<p>QQ用户社区</p>
+					</a>
+				</li>
+				<li style="margin-bottom: 0;">
+					<a href="">
+						<img src="img/code5_m_new.png"/>
+						<p>快手直播</p>
+					</a>
+				</li>
+				<li style="margin-bottom: 0;">
+					<a href="">
+						<img src="img/code6_m_new.png"/>
+						<p>bilibili</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="m">
+			<div>
+				<img src="img/footer_logo_m.png"/>
+			</div>
+			<div>
+				<p>COPYRIGHT © 1998 - 2020 TENCENT.ALL RIGHTS RESERVED.</p>
+				<p>腾讯公司 版权所有</p>
+				<p>
+					<a href="">粤网文[2020]3396-195号</a>
+					<span>|</span>
+					<a href="">（署）网出证（粤）字第054号</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

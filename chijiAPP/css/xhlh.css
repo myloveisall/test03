@@ -1,0 +1,763 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+body{
+	max-width: 680px;
+	min-width: 320px;
+	margin: 0 auto;
+	width: 100%;
+	background: #ededed;
+}
+a{
+	text-decoration: none;
+}
+.kuan{
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+.a{
+	width: 6.8rem;
+	/*max-height: 6.8rem;*/
+	margin: 0 auto;
+	height: 1.16rem;
+	background: url(../img/newnav-bg.jpg) no-repeat;
+	background-size:100%;	
+}
+.a-1,.a-2,.a-3{
+	float: left;
+}
+.a-1{
+	width: 1.3rem;
+	height: 1.05rem;
+	padding-top: 0.11rem;
+}
+.a-1 img{
+	width: 0.95rem;
+	display: block;
+	margin: auto;
+}
+.a-2{
+	width: 3.2rem;
+	height: 1.16rem;
+}
+.p-1{
+	font-size: 0.28rem;
+	color: #ffca37;
+	position: relative;
+	line-height: 0.62rem;
+}
+.p-1:before{
+	content: "";
+	position: absolute;
+	top: 0.22rem;
+	left: 1.2rem;
+	width: 0.7rem;
+	height: 0.26rem;
+	background: url(../img/new_version.png) no-repeat;
+	background-size: 100%;
+}
+.p-2{
+	font-size: 0.2rem;
+	color: #fff;
+}
+.a-3{
+	width: 1.6rem;
+	height: 1.16rem;
+}
+.a-3 a{
+	text-align: center;
+	width: 1.4rem;
+	height: 0.5rem;
+	position: relative;
+	display: block;
+	background: url(../img/nav_m_btn.png)no-repeat;
+	background-size: 100%;
+	margin-top: 0.36rem;
+}
+
+.a-3 a:before{
+	content: "";
+	width: .4rem;
+    height: .18rem;
+    background: url(../img/nav_new.png) no-repeat;
+    background-size: .4rem .18rem;
+    position: absolute;
+    top: -.02rem;
+    right: -.06rem;
+}
+.b{
+	width: 5.84rem;
+	height: 0.78em;
+	background: url(../img/nav-bg.png)no-repeat;
+	background-size: 100%;
+	padding: 0 .76rem 0 .2rem;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.16rem;
+}
+.b .b-1{
+	width: 4.62rem;
+	height: 0.78em;
+	float: left;
+}
+.b .b-1 a{
+	display: block;
+	color: #fff;
+	font-size: 0.24rem;
+	width: 25%;
+	float: left;
+	text-align: center;
+	line-height: 0.78rem;
+}
+.b-2{
+	width: 1.1rem;
+	height: 0.48rem;
+	float: left;
+	background: url(../img/login-head.png)no-repeat center/cover;
+	background-size: 100%;
+	font-size: 0;
+}
+/*以下部分弹窗*/
+.zhezhao{
+				position: fixed;
+				left: 9%;
+				top: 22%;
+				/*background: #000;*/
+				width: 5.83rem;
+				height: 3.06rem;
+				z-index: 999;
+			}
+			.tankuang{
+				position: relative;
+				background: #fff;
+				width: 5.83rem;
+				height: 3.06rem;
+				background: url(../img/dia-login-bg.png)no-repeat center/cover;
+			}
+			#header{
+				height: .5rem;
+			}
+			#header span{
+				width: 5.83rem;
+				height: .48rem;
+				color: #fff;
+				line-height: .48rem;
+				font-size: .34rem;
+				display: block;
+				text-align: center;
+			}
+			#header-right{
+				position: absolute;
+				width: .25rem;
+				height: .25rem;
+				right: .1rem;
+				top:.1rem;
+				text-align: center;
+				background: url(../img/dia-login-close.png)no-repeat center/cover;
+			}
+			.tu-1{
+				width: 20%;
+				position: absolute;
+				top: 30%;
+				left: 20%;
+			}
+			.tu-2{
+				width: 20%;
+				position: absolute;
+				top:30%;
+				right: 20%;
+			}
+/*fenge*/
+.c{
+	overflow: hidden;
+	width: 100%;
+	height: 5rem;
+}
+#lunbo ul li {
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+#lunbo ul li img{
+	width: 100%;
+}
+#lunbo ul li:not(:first-child) {
+	display: none;
+}
+.c-1{
+	width: 6.8rem;
+	height: 0.8rem;
+	position: absolute;
+	bottom: 0.26rem;
+	left: 0;
+	background: #000;
+	opacity: 0.8;
+}
+.c-1 a{
+	font-size: 0.28rem;
+	color: #fff;
+	position: absolute;
+	top: 0.2rem;
+	left: 0;
+	text-indent: 1em;
+}
+/**/
+.d{
+	overflow: hidden;
+	background: #fff;
+	margin-top: .1rem;
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+}
+.d h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	border-bottom: dashed 1px #ccc;
+}
+.d h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.d h2 a{
+	position: absolute;
+    right: 0;
+    bottom: .25rem;
+    background: url(../img/more.png) no-repeat center/cover;
+    width: .4rem;
+    height: .08rem;
+}
+.d ul li{
+	font-size: .24rem;
+	margin-top: .1rem;
+    border-bottom: dashed 1px #CACACA;
+}
+.d p{
+	margin-bottom: .1rem;
+	color: #2d2d2d;
+}
+.d ul li span{
+	padding-left: .2rem;
+	font-size: .18rem;
+	color: #7a7a80;
+}
+.d ul li p:nth-child(2){
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.d ul li p span:nth-child(1):before{
+	content: "";
+	background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -3.1rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .18rem;
+    display: block;
+    position: absolute;
+    top: .05rem;
+    left: 0;
+}
+/**/
+.e{
+	overflow: hidden;
+	background: #fff;
+	margin-top: .1rem;
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+}
+.e h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	/*border-bottom: dashed 1px #ccc;*/
+}
+.e h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.e h2 a{
+	position: absolute;
+    right: 0;
+    bottom: .25rem;
+    background: url(../img/more.png) no-repeat center/cover;
+    width: .4rem;
+    height: .08rem;
+}
+.e-2{
+	font-size: .24rem;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.e-2 li{
+	float: left;
+	width: 49%;
+	cursor: pointer;
+}
+.e-2 li img{
+	width: 3.17rem;
+	height: 1.57rem;
+}
+.e-2 p{
+	height: .66rem;
+	width: 3.17rem;
+	color: #000;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: .22rem;
+}
+/**/
+.f{
+	overflow: hidden;
+	background: #fff;
+	margin-top: .1rem;
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+}
+.f h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	/*border-bottom: dashed 1px #ccc;*/
+}
+.f h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.f ul{
+	overflow-x: scroll;
+	    white-space: nowrap;/*老师：这是神魔意思*/
+}
+.f ul li{
+	width: 4.93rem;
+	height: 2.71rem;
+	display: inline-block;
+    background: #f6f6f6;
+    position: relative;
+}
+.f h3{
+	font-size:.24rem; 
+	 /*overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;*/
+    color: #000;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.f ul li a{
+	display: block;
+}
+.f ul li a img{
+	width: 1.8rem;
+	height: 2.35rem;
+	padding: .2rem;
+}
+.f-1{
+	float: right;
+	padding: .1rem .2rem;
+	width: 2.3rem;
+	height: 1.9rem;
+	font-size: .24rem;
+}
+.f-2{
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: .9rem;
+    white-space: initial;
+    color: #000;
+    margin: .2rem 0;
+}
+.f-6{
+	display: flex;
+	justify-content: space-between;
+    font-size: .16rem;
+    color: #929292;
+}
+.f-3{
+	position: relative;
+	padding-left: .18rem;
+}
+.f-3:before{
+    content: '';
+    background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -1.5rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .18rem;
+    position: absolute;
+    top: .05rem;
+    left: 0;
+}
+.f-5{
+	margin: .1rem 0;
+	font-size: .18rem;
+	width: 2.27rem;
+	height: .44rem;
+	display: block;
+	border: 1px solid #e1e1e1;
+	color: #000;
+	line-height: .44rem;
+	text-align:center;
+}
+/**/
+.j{
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+	background: #fff;
+	margin-top: .2rem;
+}
+.j h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	/*border-bottom: dashed 1px #ccc;*/
+}
+.j h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.j-1{
+	font-size: .22rem;
+	height: .63rem;
+}
+.j-1 p{
+	float: left;
+	position: relative;
+	text-align: center;
+	line-height: .63rem;
+	width: 25%;
+}
+
+.j-1 p:nth-child(1):before,.j-1 p:nth-child(2):before,.j-1 p:nth-child(3):before{
+	content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: .02rem;
+    height: .15rem;
+    border-left: dashed 1px #cacaca;
+}
+.j-2{
+	font-size: .24rem;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.j-2 li{
+	float: left;
+	width: 49%;
+	cursor: pointer;
+}
+.j-2 li img{
+	width: 3.17rem;
+	height: 1.57rem;
+}
+.j-2 p{
+	height: .63rem;
+	width: 3.17rem;
+	color: #000;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: .22rem;
+}
+.j-2 li span{
+    color: #a1a1a1;
+    font-size: .17rem;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+}
+.j-2 li .span3{
+	float: left;
+	width: 50%;
+	display: block;
+	text-align: left;
+	position: relative;
+	padding-left: .2rem;
+}
+.j-2 li .span3:before{
+	background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -1.2rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: .02rem;
+    content: '';
+}
+.j-2 li .span4{
+	float: right;
+	/*width: 50%;*/
+	display: block;
+	text-align: right;
+}
+
+.chak{
+	background: #f8f8f8;
+	height: .54rem;
+	width: 6.8rem;
+	
+}
+.chak a{
+	text-align: center;
+	font-size: .24rem;
+	display: block;
+	color: #000000;
+	line-height: .54rem;
+}
+/**/
+.h{
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+	background: #fff;
+	margin-top: .2rem;
+}
+.h h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	/*border-bottom: dashed 1px #ccc;*/
+}
+.h h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.h ul{
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.h ul li{
+	float: left;
+	width: 1.47rem;
+	height: 1.2rem;
+	margin-bottom: .2rem;
+}
+.h ul li a{
+	display: block;
+	font-size: .2rem;
+	color: #222;
+	text-align: center;
+	background: #f6f6f6;
+    border: solid 1px #e2e2e2;
+}
+.h ul li i{
+	width: .59rem;
+	height: .58rem;
+	display: block;
+	margin: 0 auto;
+	background: url(../img/newsprite.png) no-repeat ;
+	/*background: url(../img/newsprite.png) no-repeat 0 0/7.5rem 13rem;*//*随屏幕大小图片发生变化*/
+	margin-bottom: .1rem;
+	margin-top: .2rem;
+}
+.h ul li:nth-child(1) a i{
+	background-position: -6.8rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(2) a i{
+	background-position: -6.1rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(3) a i{
+	background-position: -5.4rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(4) a i{
+	background-position: -4.6rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(5) a i{
+	background-position: -3.8rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(6) a i{
+	background-position: -2.1rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(7) a i{
+	background-position: -3rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h ul li:nth-child(8) a i{
+	background-position: -1.4rem -1.6rem;
+	background-size:7.5rem 13rem;
+}
+.h span{
+	margin-bottom: .1rem;
+	display: block;
+}
+
+/**/
+.i{
+	overflow: hidden;
+	background: #fff;
+	margin-top: .1rem;
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+}
+.i h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	/*border-bottom: dashed 1px #ccc;*/
+}
+.i h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.i h2 a{
+	position: absolute;
+    right: 0;
+    bottom: .25rem;
+    background: url(../img/more.png) no-repeat center/cover;
+    width: .4rem;
+    height: .08rem;
+}
+.i-1{
+	height: .3rem;
+	font-size: .24rem;
+	display: flex;
+	justify-content: space-around;
+}
+.i-1 p:nth-child(1){
+	color: #EFA611;
+	border-bottom: 2px solid #EFA611;	
+	padding-bottom: .1rem;
+	height: .25rem;
+}
+.i-2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.i-2 a{
+	width: 3.13rem;
+	height: 1.67rem;
+	display: block;
+	padding: .1rem 0;
+}
+.i-2 img{
+	width: 100%;
+}
+
+/**/
+.l{
+	width: 100%;
+	margin-top: .2rem;
+	background: url(../img/footer-bg-new.jpg)no-repeat;
+	background-size: 100%  100%;
+	overflow: hidden;
+}
+.l ul {
+	overflow: hidden;
+	padding: .3rem 0;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+.l ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-bottom: .2rem;
+}
+.l li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.l li img{
+	width: 33%;
+	display: block;
+	margin: 0 auto;
+	
+}
+.l ul li p{
+	width: 100%;
+	font-size: .15rem;
+    color: #989da5;
+    text-align: center;
+}
+/**/
+.m{
+	font-size: .16rem;
+	color: #FFFFFF;
+	background: #000000;
+	text-align: center;
+}
+
+.m img{
+	width: 100%;
+	
+}
+.m div a{
+	color: #fff;
+}
+.m div:nth-child(1){
+	padding-top: .4rem;
+	width: 4.3rem;
+	margin: 0 auto;
+}
+.m div:nth-child(2){
+	padding: .2rem 0;
+}
+.m div p:nth-child(2){
+	margin: .1rem 0;
+}
+/**/

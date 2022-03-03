@@ -1,0 +1,811 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+body{
+	max-width: 680px;
+	min-width: 320px;
+	margin: 0 auto;
+	width: 100%;
+	background: #ededed;
+}
+a{
+	text-decoration: none;
+}
+.kuan{
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+.a{
+	width: 6.8rem;
+	/*max-height: 6.8rem;*/
+	margin: 0 auto;
+	height: 1.16rem;
+	background: url(../img/newnav-bg.jpg) no-repeat;
+	background-size:100%;	
+}
+.a-1,.a-2,.a-3{
+	float: left;
+}
+.a-1{
+	width: 1.3rem;
+	height: 1.05rem;
+	padding-top: 0.11rem;
+}
+.a-1 img{
+	width: 0.95rem;
+	display: block;
+	margin: auto;
+}
+.a-2{
+	width: 3.2rem;
+	height: 1.16rem;
+}
+.p-1{
+	font-size: 0.28rem;
+	color: #ffca37;
+	position: relative;
+	line-height: 0.62rem;
+}
+.p-1:before{
+	content: "";
+	position: absolute;
+	top: 0.22rem;
+	left: 1.2rem;
+	width: 0.7rem;
+	height: 0.26rem;
+	background: url(../img/new_version.png) no-repeat;
+	background-size: 100%;
+}
+.p-2{
+	font-size: 0.2rem;
+	color: #fff;
+}
+.a-3{
+	width: 1.6rem;
+	height: 1.16rem;
+}
+.a-3 a{
+	text-align: center;
+	width: 1.4rem;
+	height: 0.5rem;
+	position: relative;
+	display: block;
+	background: url(../img/nav_m_btn.png)no-repeat;
+	background-size: 100%;
+	margin-top: 0.36rem;
+}
+
+.a-3 a:before{
+	content: "";
+	width: .4rem;
+    height: .18rem;
+    background: url(../img/nav_new.png) no-repeat;
+    background-size: .4rem .18rem;
+    position: absolute;
+    top: -.02rem;
+    right: -.06rem;
+}
+.b{
+	width: 5.84rem;
+	height: 0.78em;
+	background: url(../img/nav-bg.png)no-repeat;
+	background-size: 100%;
+	padding: 0 .76rem 0 .2rem;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.16rem;
+}
+.b .b-1{
+	width: 4.62rem;
+	height: 0.78em;
+	float: left;
+}
+.b .b-1 a{
+	display: block;
+	color: #fff;
+	font-size: 0.24rem;
+	width: 25%;
+	float: left;
+	text-align: center;
+	line-height: 0.78rem;
+}
+.b-2{
+	width: 1.1rem;
+	height: 0.48rem;
+	float: left;
+	background: url(../img/login-head.png)no-repeat center/cover;
+	background-size: 100%;
+	font-size: 0;
+}
+/*以下部分弹窗*/
+.zhezhao{
+				position: fixed;
+				left: 9%;
+				top: 22%;
+				/*background: #000;*/
+				width: 5.83rem;
+				height: 3.06rem;
+				z-index: 999;
+			}
+			.tankuang{
+				position: relative;
+				background: #fff;
+				width: 5.83rem;
+				height: 3.06rem;
+				background: url(../img/dia-login-bg.png)no-repeat center/cover;
+			}
+			#header{
+				height: .5rem;
+			}
+			#header span{
+				width: 5.83rem;
+				height: .48rem;
+				color: #fff;
+				line-height: .48rem;
+				font-size: .34rem;
+				display: block;
+				text-align: center;
+			}
+			#header-right{
+				position: absolute;
+				width: .25rem;
+				height: .25rem;
+				right: .1rem;
+				top:.1rem;
+				text-align: center;
+				background: url(../img/dia-login-close.png)no-repeat center/cover;
+			}
+			.tu-1{
+				width: 20%;
+				position: absolute;
+				top: 30%;
+				left: 20%;
+			}
+			.tu-2{
+				width:20%;
+				position: absolute;
+				top:30%;
+				right: 20%;
+			}
+/*fenge*/
+.c{
+	overflow: hidden;
+	width: 100%;
+	height: 5rem;
+}
+#lunbo ul li {
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+#lunbo ul li img{
+	width: 100%;
+}
+#lunbo ul li:not(:first-child) {
+	display: none;
+}
+.c-1{
+	width: 6.8rem;
+	height: 0.8rem;
+	position: absolute;
+	bottom: 0.26rem;
+	left: 0;
+	background: #000;
+	opacity: 0.8;
+}
+.c-1 a{
+	font-size: 0.28rem;
+	color: #fff;
+	position: absolute;
+	top: 0.2rem;
+	left: 0;
+	text-indent: 1em;
+}
+/**/
+.d{
+	overflow: hidden;
+	background: #fff;
+	margin-top: .1rem;
+	width: 6.4rem;
+	/*margin-bottom: .1rem;*/
+	padding: .2rem .2rem 0;
+}
+.d h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	border-bottom: dashed 1px #ccc;
+}
+.d h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.d h2 ul{
+	width: 1rem;
+	height: .42rem;
+	float: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.d .d-1{
+	font-size: .26rem;
+	font-weight: 100;
+	float: right;
+}
+
+#a1 ul li{
+	overflow: hidden;
+	/*height: .65rem;*/
+	padding-bottom: .1rem;
+	position: relative;
+	padding-top: .2rem;
+	border-bottom:  dashed 1px #ccc ;
+}
+
+#a1 .tuu{
+	overflow: hidden;
+	width: 100%;
+	height: 1.09rem;
+	display: block;
+}
+.ty{
+	overflow: hidden;
+	width: 100%;
+	/*height: .65rem;*/
+	display: block;
+}
+
+.tuu img{
+	width: 2.04rem;
+	height: 1.04em;
+}
+
+.you{
+	width: 4.18rem;
+	height: 1.04rem;
+	float: right;
+}
+.yk{
+	width: 6.4rem;
+	/*height: .65rem;*/
+	float: right;
+}
+.yk-1{
+	font-size: .24rem;
+	height: .29rem;
+}
+.yk-2{
+	font-size: .2rem;
+	padding-top: .1rem;
+	height: .24rem;
+}
+.yk-1 p{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    float: left;
+    width: 84%;
+}
+.yk-1 span{
+	float: right;
+	color: #878787;
+}
+.you-1{
+	height: .7rem;
+}
+.you-2{
+	height: .24rem;
+	font-size: .2rem;
+	padding-top: .1rem;
+}
+.you-1 p{
+	width: 84%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    float: left;
+    font-size: .26rem;
+}
+.you-1 span{
+	float: right;
+	font-size: .26rem;
+	color: #878787;
+}
+.you-2 p,.yk-2 p{
+	float: left;
+    color: #878787;
+    position: relative;
+    padding-left: .2rem;
+}
+.you-2 p:before,.yk-2 p:before{
+	content: "";
+	position: absolute;
+	top: .04rem;
+	left: 0;
+	width: .2rem;
+    height: .19rem;
+    background: url(../img/newsprite.png) no-repeat -1.5rem -1.1rem/7.5rem 13rem;
+}
+.you-2 span,.yk-2 span{
+	float: right;
+    color: #878787;
+    position: relative;
+    padding-left: .2rem;
+}
+.you-2 span:before,.yk-2 span:before{
+	content: "";
+	position: absolute;
+	top: .03rem;
+	left: 0;
+	width: .2rem;
+	height: .2rem;
+	background: url(../img/newsprite.png) no-repeat -1.2rem -1.1rem/7.5rem 13rem;
+}
+/**/
+.e{
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+	background: #fff;
+	margin-top: .2rem;
+}
+.e h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	border-bottom: dashed 1px #ccc;
+}
+.e h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.e .e-1 {
+	overflow: hidden;
+}
+.e .e-1 li{
+	float: left;
+	margin-top: .2rem;
+}
+.e .e-1 li p{
+	text-align: center;
+    width: 1.6rem;
+    font-size: .20rem;
+    color: #000;
+}
+.e .e-1 li img{
+	width: 1.18rem;
+	height: 1.18rem;
+	border-radius:50% ;
+	margin-left: 13%;
+}
+.e-2{
+	font-size: .24rem;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	margin-top: .1rem;
+}
+.e-2 li{
+	float: left;
+	width: 49%;
+	cursor: pointer;
+}
+.e-2 li img{
+	width: 3.17rem;
+	height: 1.57rem;
+}
+.e-2 p{
+	height: .63rem;
+	width: 3.17rem;
+	color: #000;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: .22rem;
+}
+.e-2 li span{
+    color: #a1a1a1;
+    font-size: .17rem;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+}
+.e-2 li .span3{
+	float: left;
+	width: 50%;
+	display: block;
+	text-align: left;
+	position: relative;
+	padding-left: .2rem;
+}
+.e-2 li .span3:before{
+	background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -1.2rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: .02rem;
+    content: '';
+}
+.e-2 li .span4{
+	float: right;
+	/*width: 50%;*/
+	display: block;
+	text-align: right;
+}
+/**/
+.zhu{
+	background: #f8f8f8;
+	height: .54rem;
+	width: 6.8rem;
+	
+}
+.zhu a{
+	text-align: center;
+	font-size: .24rem;
+	display: block;
+	color: #000000;
+	line-height: .54rem;
+}
+/**/
+.f{
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+	background: #fff;
+	margin-top: .2rem;
+}
+.f h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	border-bottom: dashed 1px #ccc;
+}
+.f h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.f-1{
+	font-size: .22rem;
+	height: .63rem;
+}
+.f-1 p{
+	float: left;
+	position: relative;
+	text-align: center;
+	line-height: .63rem;
+	width: 25%;
+}
+
+.f-1 p:nth-child(1):before,.f-1 p:nth-child(2):before,.f-1 p:nth-child(3):before{
+	content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: .02rem;
+    height: .15rem;
+    border-left: dashed 1px #cacaca;
+}
+.f-2{
+	font-size: .24rem;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.f-2 li{
+	float: left;
+	width: 49%;
+	cursor: pointer;
+}
+.f-2 li img{
+	width: 3.17rem;
+	height: 1.57rem;
+}
+.f-2 p{
+	height: .63rem;
+	width: 3.17rem;
+	color: #000;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: .22rem;
+}
+.f-2 li span{
+    color: #a1a1a1;
+    font-size: .17rem;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+}
+.f-2 li .span3{
+	float: left;
+	width: 50%;
+	display: block;
+	text-align: left;
+	position: relative;
+	padding-left: .2rem;
+}
+.f-2 li .span3:before{
+	background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -1.2rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: .02rem;
+    content: '';
+}
+.f-2 li .span4{
+	float: right;
+	display: block;
+	text-align: right;
+}
+.f-3 {
+	width: 6.44rem;
+	height: 3.98rem;
+}
+.f-3 img{
+	height: 3.45rem;
+	width: 6.44rem;
+}
+.f-3 p{
+	font-size: .22rem;
+	color: #000000;
+	height: .3rem;
+}
+.f-3 span{
+	color: #a1a1a1;
+    font-size: .17rem;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+}
+.span1{
+	float: left;
+	width: 50%;
+	display: block;
+	text-align: left;
+	position: relative;
+	padding-left: .2rem;
+}
+.span1:before{
+	background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -1.2rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: .02rem;
+    content: '';
+}
+.span2{
+	font-size: .2rem;
+	float: right;
+	display: block;
+	text-align: right;
+}
+/**/
+.shipin{
+	background: #f8f8f8;
+	height: .54rem;
+	width: 6.8rem;
+	
+}
+.shipin a{
+	text-align: center;
+	font-size: .24rem;
+	display: block;
+	color: #000000;
+	line-height: .54rem;
+}
+/**/
+.g{
+	width: 6.4rem;
+	padding: .2rem .2rem 0;
+	background: #fff;
+	margin-top: .2rem;
+}
+.g h2{
+	font-size: .32rem;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .1rem;
+	border-bottom: dashed 1px #ccc;
+}
+.g h2 i{
+	width: .38rem;
+	height: .38rem;
+	background: url(../img/icon_spr.png)no-repeat center/cover;
+	float: left;
+	/*line-height: .42rem;*/
+	background-position: 0rem -1.49rem;
+}
+.g-1{
+	font-size: .22rem;
+	height: .63rem;
+}
+.g-1 p{
+	float: left;
+	position: relative;
+	text-align: center;
+	line-height: .63rem;
+	width: 25%;
+}
+
+.g-1 p:nth-child(1):before,.g-1 p:nth-child(2):before,.g-1 p:nth-child(3):before{
+	content: "";
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: .02rem;
+    height: .15rem;
+    border-left: dashed 1px #cacaca;
+}
+.g-2{
+	font-size: .24rem;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.g-2 li{
+	float: left;
+	width: 49%;
+	cursor: pointer;
+}
+.g-2 li img{
+	width: 3.17rem;
+	height: 1.57rem;
+}
+.g-2 p{
+	height: .63rem;
+	width: 3.17rem;
+	color: #000;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: .22rem;
+}
+.g-2 li span{
+    color: #a1a1a1;
+    font-size: .17rem;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+}
+.g-2 li .span3{
+	float: left;
+	width: 50%;
+	display: block;
+	text-align: left;
+	position: relative;
+	padding-left: .2rem;
+}
+.g-2 li .span3:before{
+	background: url(//game.gtimg.cn/images/gp/m/m201908/newsprite.png) no-repeat -1.2rem -1.1rem/7.5rem 13rem;
+    width: .2rem;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    top: .02rem;
+    content: '';
+}
+.g-2 li .span4{
+	float: right;
+	display: block;
+	text-align: right;
+}
+.g-3 {
+	width: 6.44rem;
+	height: 3.98rem;
+}
+.g-3 img{
+	height: 3.45rem;
+	width: 6.44rem;
+}
+.g-3 p{
+	font-size: .22rem;
+	color: #000000;
+	height: .3rem;
+}
+.g-3 span{
+	color: #a1a1a1;
+    font-size: .17rem;
+    margin-bottom: .2rem;
+    margin-top: .1rem;
+}
+/**/
+.l{
+	width: 100%;
+	margin-top: .2rem;
+	background: url(../img/footer-bg-new.jpg)no-repeat;
+	background-size: 100%  100%;
+	overflow: hidden;
+}
+.l ul {
+	overflow: hidden;
+	padding: .3rem 0;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+.l ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-bottom: .2rem;
+}
+.l li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.l li img{
+	width: 33%;
+	display: block;
+	margin: 0 auto;
+	
+}
+.l ul li p{
+	width: 100%;
+	font-size: .15rem;
+    color: #989da5;
+    text-align: center;
+}
+/**/
+.m{
+	font-size: .16rem;
+	color: #FFFFFF;
+	background: #000000;
+	text-align: center;
+}
+
+.m img{
+	width: 100%;
+}
+.m div a{
+	color: #fff;
+}
+.m div:nth-child(1){
+	padding-top: .4rem;
+	width: 4.3rem;
+	margin: 0 auto;
+}
+.m div:nth-child(2){
+	padding: .2rem 0;
+}
+.m div p:nth-child(2){
+	margin: .1rem 0;
+}

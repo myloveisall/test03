@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/new_file.css" />
+    <script type="text/javascript" src="js/tab.js"></script>
+    <script type="text/javascript" src="js/lunbo.js" ></script>
+    <script type="text/javascript" src="js/rem.js" ></script>
+    
+</head>
+<body>
+	<div class="kuan">
+		<div class="a">
+			<div class="a-1">
+				<img src="img/logo_200.png" />
+			</div>
+			<div class="a-2">
+				<p class="p-1">和平精英</p>
+				<p class="p-2">腾讯自研军事竞赛体验手游</p>
+			</div>
+			<div class="a-3">
+				<a href=""></a>
+			</div>
+		</div>
+	</div>
+	<div class="b">
+		<div class="b-1">
+			<a href="index.html">首页</a>
+			<a href="gonglue.html">攻略</a>
+			<a href="shipin.html">视频</a>
+			<a href="">资料库</a>
+		</div>
+		<div href="" class="b-2" onclick="dianwo()">登录</div>
+		<div class="zhezhao" id='zhezhao'>
+			<div class="tankuang">
+				<div id="header">
+					<span>登录</span>
+					<div id="header-right" onclick="hidder()"></div>
+				</div>
+				<img class="tu-1" src="img/dia-login-qq.png" />
+				<img class="tu-2" src="img/dia-login-wx.png" />
+			</div>
+		</div>
+		<script type="text/javascript">
+			document.getElementById('zhezhao').style.display="none";
+			function dianwo(){
+				document.getElementById('zhezhao').style.display="";
+			}
+			function hidder(){
+				document.getElementById('zhezhao').style.display="none";
+			}
+		</script>
+	</div>
+	<!--轮播-->
+	<div class="c">
+		<div id="lunbo">
+			<ul>
+				<li>
+					<img src="img/03c85cf6a8d6ed1863573b9a59a6e658.jpeg" title="***">
+					<div class="c-1">
+						<a href="">腾讯游戏知几企鹅电竞直播起航</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/2cac6cbb9295be36ccd410cad5e50446.jpeg" title="***">
+					<div class="c-1">
+						<a href="">高校赛全国总决赛来袭</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/68bc7cf16495dd39e75747186c3ca96f.jpeg" title="***">
+					<div class="c-1">
+						<a href="">暮色古堡，优雅神秘</a>
+					</div>
+				</li>
+				<li>
+					<img src="img/cad0118cd597f8f129bf0c1064e9493c.jpeg" title="***">
+					<div class="c-1">
+						<a href="">和平精英12月年度直播盛典月</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		 <script type="text/javascript">
+			//因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+			var li = document.getElementById('lunbo').getElementsByTagName("li");
+			var num = 0;
+			var len = li.length;
+	
+			setInterval(function() {
+				li[num].style.display = "none";
+				num = ++num == len ? 0 : num;
+				li[num].style.display = "inline-block";
+			}, 3000); //切换时间
+		</script>
+	</div>
+	<div class="d">
+		<a href="">B站冰雪空投活动奖励公示</a>
+	</div>
+	<div class="e">
+		<!--<p>该实例设置了默认显示的选项卡，在页面载入时触发指定 id 的 click 事件。</p>-->
+		<h2>
+			<i></i>
+			新闻资讯
+			<a></a>
+		</h2>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">最新</button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')">新闻</button>
+			<button class="tablinks" onclick="openCity(event, 'Tokyo')">公告</button>
+			<button class="tablinks" onclick="openCity(event, 'huodong')">活动</button>
+			<button class="tablinks" onclick="openCity(event, 'saishi')">赛事</button>
+		</div>
+		<div id="London" class="tabcontent">
+			<ul>
+				<li><a href=""><span>[最新]</span>【揭榜！】NV重回积分榜第一 老马的鲜奶针不戳</a><i>11-14</i></li>
+				<li><a href=""><span>[最新]</span>【揭榜！】PEC第二天的泰式第一鸡</a><i>11-14</i></li>
+				<li><a href=""><span>[最新]</span>Bilibili“内鬼大作战” 人气主播变身名品演员！</a><i>11-14</i></li>
+				<li><a href=""><span>[最新]</span>2020PEC 极端圈型 精彩加倍</a><i>11-14</i></li>
+				<li><a href=""><span>[最新]</span>2020 PEC第三局 局势转变之局</a><i>11-14</i></li>
+			</ul>
+		</div>
+		<div id="Paris" class="tabcontent">
+			<ul>
+				<li><a href=""><span>[新闻]</span>斗鱼和平精英——精英奇妙夜第三期</a><i>11-14</i></li>
+				<li><a href=""><span>[新闻]</span>《虎牙超级偶像联赛》威神V炸场！帅气特种兵集合和平精英</a><i>11-14</i></li>
+				<li><a href=""><span>[新闻]</span>虎牙和平精英红娘PK赛浪漫出发！</a><i>11-14</i></li>
+				<li><a href=""><span>[新闻]</span>不要怂，一起下！《和平精英》携手潘粤明11.11直播下洞</a><i>11-14</i></li>
+				<li><a href=""><span>[新闻]</span>高校化身和平精英：当你的高校变成和平精英人物会怎样？</a><i>11-14</i></li>
+			</ul>
+		</div>
+		<div id="Tokyo" class="tabcontent">
+			<ul>
+				<li><a href=""><span>[公告]</span>和平营地&斗鱼合作活动奖励公示</a><i>11-14</i></li>
+				<li><a href=""><span>[公告]</span>SS8赛季结束预告</a><i>11-14</i></li>
+				<li><a href=""><span>[公告]</span>【已修复】7月25日登录异常公告</a><i>11-14</i></li>
+				<li><a href=""><span>[公告]</span>微视717空投节抽奖活动奖励公示</a><i>11-14</i></li>
+				<li><a href=""><span>[公告]</span>《和平精英》电音盛典邀你当DJ活动奖励抽取概率公示</a><i>11-14</i></li>
+			</ul>
+		</div>
+		<div id="huodong" class="tabcontent">
+			<ul>
+				<li><a href=""><span>[活动]</span>斗鱼主播花老湿与若若水友赛等你加入！</a><i>11-14</i></li>
+				<li><a href=""><span>[活动]</span>bilibiliUP主体验服先锋探秘 海量红包送不停！</a><i>11-14</i></li>
+				<li><a href=""><span>[活动]</span>【企鹅电竞】首届巅峰赛打响，冲击巅峰段位瓜分20万Q币</a><i>11-14</i></li>
+				<li><a href=""><span>[活动]</span>【企鹅电竞】冷宴华表演赛惊奇夜专场，携手神秘嘉宾，狂撒现金红包！</a><i>11-14</i></li>
+				<li><a href=""><span>[活动]</span>快手&和平巅峰赛火热开启，成名在望，直指巅峰！</a><i>11-14</i></li>
+			</ul>
+		</div>
+		<div id="saishi" class="tabcontent">
+			<ul>
+				<li><a href=""><span>[赛事]</span>【揭榜！】NV重回积分榜第一 老马的鲜奶针不戳</a><i>11-14</i></li>
+				<li><a href=""><span>[赛事]</span>【揭榜！】PEC第二天的泰式第一鸡</a><i>11-14</i></li>
+				<li><a href=""><span>[赛事]</span>2020PEC 极端圈型 精彩加倍</a><i>11-14</i></li>
+				<li><a href=""><span>[赛事]</span>2020 PEC第三局 局势转变之局</a><i>11-14</i></li>
+				<li><a href=""><span>[赛事]</span>上快手看PEC，好礼拿不停！</a><i>11-14</i></li>
+			</ul>
+		</div>
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for(i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for(i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			// 触发 id="defaultOpen" click 事件
+			document.getElementById("defaultOpen").click();
+		</script>
+	</div>
+	<!--补上的模块-->
+	<div class="xinw">
+		<h2>
+			<i></i>
+			精英爆料
+			<a></a>
+		</h2>
+		<div class="bao">
+			<a href="">
+				<p>新玩法/模式</p>
+				<p>新枪械/皮肤</p>
+				<p>新地图</p>
+				<p>新载具</p>
+			</a>
+		</div>
+		<div class="liao">
+			<a href=""><img src="img/6bda0fc244803593cc72d298c89af571.jpg" /></a>
+		</div>
+	</div>
+	<div class="f">
+		<h2>
+			<i></i>
+			视频中心
+			<a></a>
+		</h2>
+		<div class="zuo">
+			<div id="head">
+				<ul>
+					<li id="L1" onclick="Tab(1)">
+						官方视频
+					</li>
+					<li id="L2" onclick="Tab(2)">
+						人气主播
+					</li>
+					<li id="L3" onclick="Tab(3)">
+						进阶教学
+					</li>
+					<li id="L4" onclick="Tab(4)">
+						赛事专栏
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="d1" >
+			<ul>
+				<li>
+					<a href="">
+							<img src="img/0 (1).jpg">
+							
+					</a>
+					<p class="huang">和平精英流星雨，倒数三日，即将降临！</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (2).jpg">
+					</a>
+					<p class="huang">11月18日和平精英新版本上线！狮子座流星雨即将照亮海岛夜空~</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (3).jpg">
+					</a>
+					<p class="huang">和平精英代言人天团 杨超越</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (4).jpg">
+					</a>
+					<p class="huang">和平精英代言人天团 华晨宇</p>
+				</li>
+			</ul>
+		</div>
+		<div id="d2"style="display: none;">
+			<ul>
+				<li>
+					<a href="">
+							<img src="img/0 (5).jpg">
+					</a>
+					<p class="huang">难言和柔柔之间，究竟谁能忽悠过对方？</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (2).jpg">
+					</a>
+					<p class="huang">有难言在，还有人能活着逃出自闭城？</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/下载.jpg">
+					</a>
+					<p class="huang">第二队自己跳车重伤？柔柔连灭两队！</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/下载.png">
+					</a>
+					<p class="huang">主播有点强：不求人绕房反杀，轻松灭四人队！</p>
+				</li>
+			</ul>
+		</div>
+		<div id="d3"style="display: none;">
+			<ul>
+				<li>
+					<a href="">
+							<img src="img/0 (1).jpg">
+					</a>
+					<p class="huang">什么？游戏中最强键位设置，不求人的键位居然排名第一</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (2).jpg">
+					</a>
+					<p class="huang">一分钟教你SS9赛季初轻松上分，想要上分一定要知道的攻略</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (3).jpg">
+					</a>
+					<p class="huang">白菜游戏解说：学会这个最新攀爬技巧,就能占领P城隐藏制高点</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (4).jpg">
+					</a>
+					<p class="huang">老湿：思路清晰才更容易夺冠！皇冠一局能加50分是真的爽！</p>
+				</li>
+			</ul>
+		</div>
+		<div id="d4"style="display: none;">
+			<ul>
+				<li>
+					<a href="">
+							<img src="img/0 (5).jpg">
+					</a>
+					<p class="huang">【回放】和平精英明星表演赛 全程回放</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/0 (1).jpg">
+							
+					</a>
+					<p class="huang">【回放】海岛模式明星表演赛：杨超越战队满员吃鸡</p>
+				</li>
+				<li>
+					<a href="">
+							<img src="img/下载.png">
+							
+					</a>
+					<p class="huang">Paraboy现场指导 王一博收获八倍镜如虎添翼</p>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/下载.jpg">
+					</a>
+					<p class="huang">海岛上演尬舞天团首秀 王一博、华晨宇领众舞王登场</p>
+				</li>
+			</ul>
+		</div>
+		<script language="javascript">
+			function Tab(num) {
+				var i;
+				for(i = 1; i <= 4; i++) {
+					if(i == num)
+						document.getElementById("d" + i).style.display = "block";
+					else
+						document.getElementById("d" + i).style.display = "none";
+				}
+			}
+		</script>
+		<div class="duo">
+			<a href="">更多视频</a>
+		</div>
+	</div>
+	<div class="j">
+		<div class="zuo-1">
+			<h2>
+				<i></i>
+				热门排行
+				<ul>
+					<li id="L1-1" onclick="Tabs(1)" style="color: #EFA611;">
+						日
+					</li>
+					<li id="L2-1" onclick="Tabs(2)">
+						周
+					</li>
+					<li id="L3-1" onclick="Tabs(3)">
+						月
+					</li>
+				</ul>
+			</h2>
+		</div>
+		<div id="a1" >
+			<ul>
+				<li>
+					<a href="" class="tuu">
+						<img src="img/下载.png"/>
+						<div class="you">
+							<div class="you-1">
+								<p>《和平精英》携手奇幻贺岁大片《赤狐书生》打造影游跨界合作新标杆</p>
+								<span>12/01</span>
+							</div>
+							<div class="you-2">
+								<p>和平精英运营团队</p>
+								<span>8.6万</span>
+							</div>
+						</div>
+						
+					</a>
+					<i>1</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺分不是梦</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>2</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四巧，学会上分不是梦</p>
+								<span>04/12</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>900</span>
+							</div>
+						</div>
+					</a>
+					<i>3</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠小技巧，学会是梦</p>
+								<span>04/13</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>800</span>
+							</div>
+						</div>
+					</a>
+					<i>4</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>冠小技巧，学会上分不是梦</p>
+								<span>04/14</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>700</span>
+							</div>
+						</div>
+					</a>
+					<i>5</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠分不是梦</p>
+								<span>04/15</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>600</span>
+							</div>
+						</div>
+					</a>
+					<i>6</i>
+				</li>
+			</ul>
+		</div>
+		<div id="a2"style="display: none;">
+			<ul>
+				<li>
+					<a href="" class="tuu">
+						<img src="img/下载.png"/>
+						<div class="you">
+							<div class="you-1">
+								<p>《和平精英》携手奇幻贺岁大片《赤狐书生》打造影游跨界合作新标杆</p>
+								<span>12/01</span>
+							</div>
+							<div class="you-2">
+								<p>和平精英运营团队</p>
+								<span>8.6万</span>
+							</div>
+						</div>
+						
+					</a>
+					<i>1</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>技巧，学会上分不是梦</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>2</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>小技巧，学会上分不是梦</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>3</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>冠小技巧，学会上分不是梦</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>4</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>夺冠小技巧，学会上分不是梦</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>5</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>排夺冠小技巧，学会上分不是梦</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>6</i>
+				</li>
+			</ul>
+		</div>
+		<div id="a3"style="display: none;">
+			<ul>
+				<li>
+					<a href="" class="tuu">
+						<img src="img/下载.png"/>
+						<div class="you">
+							<div class="you-1">
+								<p>《和平精英》携手奇幻贺岁大片《赤狐书生》打造影游跨界合作新标杆</p>
+								<span>12/01</span>
+							</div>
+							<div class="you-2">
+								<p>和平精英运营团队</p>
+								<span>8.6万</span>
+							</div>
+						</div>
+						
+					</a>
+					<i>1</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠小技巧，学会</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>2</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠小技巧，学会上</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>3</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠小技巧，学会上分</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>4</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠小技巧，学会上分不</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>5</i>
+				</li>
+				<li>
+					<a href="" class="ty">
+						<img src="img/safz.jpg"/>
+						<div class="yk">
+							<div class="yk-1">
+								<p>四排夺冠小技巧，学会上分不是</p>
+								<span>04/11</span>
+							</div>
+							<div class="yk-2">
+								<p>空投哥</p>
+								<span>1218</span>
+							</div>
+						</div>
+					</a>
+					<i>6</i>
+				</li>
+			</ul>
+		</div>
+		<script language="javascript">
+			function Tabs(nuam) {
+				var j;
+				for(j = 1; j <= 3; j++) {
+					if(j == nuam)
+						document.getElementById("a" + j).style.display = "block";
+					else
+						document.getElementById("a" + j).style.display = "none";
+				}
+			}
+		</script>
+	</div>
+	<div class="h">
+		<h2>
+			<i></i>
+			攻略中心
+			
+		</h2>
+		<div class="h-1">
+			<p>最新攻略</p>
+			<p>攻楼技巧</p>
+			<p>游戏设置</p>
+		</div>
+		<ul class="h-2">
+			<li>
+				<img src="img/sdfks (1).jpg"/>
+				<p>SS11赛季更新，装扮道具赏析</p>
+			</li>
+			<li>
+				<img src="img/sdfks (2).jpg"/>
+				<p>暮色古堡军需赏析</p>
+			</li>
+			<li>
+				<img src="img/sdfks (3).jpg"/>
+				<p>与众乐乐，分享无限！全新空间系统正式上线</p>
+			</li>
+			<li>
+				<img src="img/sdfks (4).jpg"/>
+				<p>暮色古堡，神秘来袭！全新珍藏宝箱鉴赏</p>
+			</li>
+		</ul>
+		<a href="" class="h-3">更多攻略</a>
+	</div>
+	<div class="i">
+		<h2>
+			<i></i>
+			精品栏目
+		</h2>
+		<div class="i-1">
+			<p>燃烧吧大局观</p>
+			<p>盒子有话说</p>
+			<p>快来扶我</p>
+			<p>鸽弟秀</p>
+		</div>
+		<ul class="i-2">
+			<li>
+				<img src="img/0sdaf.jpg"/>
+				<p>燃烧吧大局观：刚枪大佬连射三发信号枪后，却惨遭阴王套路！</p>
+				<span>浏览：15245</span>
+				<span>03/04</span>
+			</li>
+			<li>
+				<img src="img/0sdaf.jpg"/>
+				<p>燃烧吧大局观：沙漠必备上房技巧，教你拿下别墅区！</p>
+				<span>浏览：15245</span>
+				<span>03/04</span>
+			</li>
+			<li>
+				<img src="img/0sdaf.jpg"/>
+				<p>【燃烧吧大局观】：拜佛枪法到底有没有用？看完这个视频你就知道</p>
+				<span>浏览：15245</span>
+				<span>03/04</span>
+			</li>
+			<li>
+				<img src="img/0sdaf.jpg"/>
+				<p>燃烧吧大局观 有史以来最激烈对局 3队混战血性吃鸡！</p>
+				<span>浏览：15245</span>
+				<span>03/04</span>
+			</li>
+		</ul>
+	</div>
+	<div class="g">
+		<h2>
+			<i></i>
+			和平人气主播
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     		</h2>
+		<ul>
+			<li>
+				<a href="">
+					<img  src="img/qiguai.jpg"/>
+					<p>奇怪君</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/nanyan.jpg" />
+					<p>难言</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/wanyu.jpg" />
+					<p>晚玉</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/yididi.jpg" />
+					<p>艺帝帝</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="k">
+		<h2>
+			<i></i>
+			游戏特色
+		</h2>
+		<div class="k-1">
+			<img  src="img/6bda0fc244803593cc72d298c89af571.jpg"/>
+			<div class="ding"></div>
+			<div class="wei"></div>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="l">
+		<ul>
+			<li>
+				<a href="">
+					<img src="img/code2_m_new.png"/>
+					<p>官方公众号</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/code4_m_new.png"/>
+					<p>官方微博</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/code2_m_new.png"/>
+					<p>微信用户社区</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/code1_m_new.png"/>
+					<p>QQ用户社区</p>
+				</a>
+			</li>
+			<li style="margin-bottom: 0;">
+				<a href="">
+					<img src="img/code5_m_new.png"/>
+					<p>快手直播</p>
+				</a>
+			</li>
+			<li style="margin-bottom: 0;">
+				<a href="">
+					<img src="img/code6_m_new.png"/>
+					<p>bilibili</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="m">
+		<div>
+			<img src="img/footer_logo_m.png"/>
+		</div>
+		<div>
+			<p>COPYRIGHT © 1998 - 2020 TENCENT.ALL RIGHTS RESERVED.</p>
+			<p>腾讯公司 版权所有</p>
+			<p>
+				<a href="">粤网文[2020]3396-195号</a>
+				<span>|</span>
+				<a href="">（署）网出证（粤）字第054号</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
